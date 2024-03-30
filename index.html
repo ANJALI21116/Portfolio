@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PORTFOLIO</title>
+   
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script defer src="./index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman';
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(11, 116, 209);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(222, 34, 9);
+            font-size: 1.3rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .right {
+            font-size: 1.2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .purple {
+            color: rgb(164, 84, 239);
+
+        }
+
+        #element {
+            color: rgb(164, 84, 239);
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            display: flex;
+            justify-content: space-around;
+            margin: 120px auto;
+            align-items: center;
+        }
+
+        .rightSec h1 {
+            text-align: left;
+            font-weight: bold;
+            color: rgb(27, 128, 200);
+            font-size: 60px;
+            margin-left:50px
+        }
+
+        .rightSec p {
+            color:white ;
+            font-size: 30px;
+            text-align: left;
+            margin: 40px 50px;
+            justify-content: space-around;
+        }
+
+        .leftSec img {
+            width: 500px;
+            height: 100%;
+            margin: 0 100px;
+        }
+
+        .text-gray {
+            color: rgb(172, 169, 169);
+            font-size: 30px;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+           
+        }
+
+        .thirdSection h1 {
+            font-size: 2.9rem;
+        }
+
+        .thirdSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 170px;
+            width: 1px;
+            background-color: white;
+            margin: 0 110px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -32px;
+            left: -18px;
+        }
+
+        .vertical-desc {
+            font-size: 20px;
+            position: relative;
+            width: 150px;
+            top: 130px;
+            left: -60px;
+        }
+
+        .pro {
+            margin-top: 350px;
+        }
+
+        .pro h1 {
+            font-size: 30px;
+            color: #ebeef1;
+            text-decoration: underline;
+        }
+
+        .describe{
+            margin-top: 50px;
+        }
+        .describe h1{
+            color: rgb(152, 115, 226);
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .describe p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anjali's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Section1">Home</a></li>
+                    <li><a href="#Section2">About</a></li>
+                    <li><a href="#Section3">Portfolio</a></li>
+                    <li><a href="#Section4">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section class="firstSection" id="Section1">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Anjali</span>
+                <div>and I am a confident</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg2.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="Section2">
+            <div class="leftSec">
+                <img src="bg.png" alt="">
+            </div>
+            <div class="rightSec">
+                <h1>About Me</h1>
+                <p>I'm a Btech(IT) 3rd year student from Banasthali Vidyapith which is in Jaipur, Rajasthan.Although,
+                    I have done my schooling from Hisar,Haryana . I have been in Banasthali Uni.from last 3
+                    years, its a great experience being in a World Level Women University.In these 3 years of my bachelors, I
+                    have learnt and worked upon various programming languages like : C, C++, Java and current I am
+                    workingwith Html, Css, JavaScript and Python, that is Web Developemnt . </p>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection" id="Section3">
+            <span class="text-gray">What I have learnt so far</span>
+            <h1>Skills and Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="c.png" alt="">
+                    <div class="vertical-desc">C programming language</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="c++.png" alt="">
+                    <div class="vertical-desc">C++ programming language</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-desc">Java programming language</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-desc">Python programming language</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="front.png" alt="">
+                    <div class="vertical-desc">Front-End Developemnt</div>
+                </div>
+            </div>
+            <div class="pro">
+                <h1>Some of my projects:</h1>
+            </div>
+            <div class="describe">
+                <h1>Library Management System:</h1>
+                <p>Library Management System using C programming language.It is implemented using linked list in C . The
+                    main operation involves issuing books, returning the issued books and maintaining records of the
+                    issued books.Only a person with the login credentials can access the Library Management System. That person
+                    can perform many operations like adding the book details, removing the book details, displaying the
+                    book details, modifying the book details, etc. </p><br><br>
+                <h1>School Management System:</h1>
+                <p>School Management System using C++ programming language.A user can ADD student records, DISPLAY
+                    student records, SEARCH student record, and DELETE student records and also has an option to show
+                    the student all done using a menu-driven program. </p><br><br>
+                <h1>Beauty Website:</h1>
+                <p>A Beauty Website using HTML and CSS.This website provides us various beauty and makeup
+                    products from various brands as per our choice. It allows to select and buy the products, allows
+                    provides a medium to contact to the admin in case of any query. </p><br><br>
+                <h1>Exam Portal:</h1>
+                <p>An Exam portal using HTML,CSS,JAVASCRIPT and PYTHON.This portal provides details of JEE and NEET exam
+                    specifically and helps students in better preparation by providing them previous year question
+                    papers, mocktests for practise, relevant books and all other informations.</p>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthSection" id="Section4">
+            <div class="container">
+              
+                    <h1>🩵 Contact Me 🩵</h1>
+                    <p>Wanna get in touch❔ Do fill out this form.</p>
+                   
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>            
+                    <input class="btn" type="submit" id="submit" value="Send">              
+                </form>          
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['B.TECH Student.', 'Web Developer.', 'Curious Learner.', 'Jet-Setter.'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 10,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
